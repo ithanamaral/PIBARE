@@ -3,7 +3,7 @@ Link do projeto --->  https://pibare.netlify.app
 </br>
 </br>
 ## Descrição
-Primeiro site remunerado que fiz para uma comunidade cristã com objetivo de representar a comunidade na web e fornecer informações sobre a mesma. Foi desenvolvido com Html e Css. Vale lembrar, que a melhor visualização do site se encontra em um zoom de tela no navegador de 50%
+Primeiro site remunerado que fiz para uma comunidade cristã com objetivo de representar a comunidade na web e fornecer informações sobre a mesma. Foi desenvolvido com Html e Css. Vale lembrar, que a melhor visualização do site se encontra em um zoom de tela no navegador de 50%.
 </br>
 </br>
 

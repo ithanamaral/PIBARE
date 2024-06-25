@@ -11,11 +11,11 @@ Primeiro site remunerado que fiz para uma comunidade cristã com objetivo de rep
 Aqui estão alguns gifs do site desse projeto, para ver o video completo vá na pasta Vídeos! =)
 </br>
 <p align = center>
-<img width="650" heigth="700" src ="Vídeo/Gif/Primeira Igreja Batista no Retiro_1.gif">
+<img width="650" heigth="700" src ="Vídeos/Gif/Primeira Igreja Batista no Retiro_1.gif">
 </p>
 </br>
 <p align = center>
-<img width="650" heigth="700" src ="Vídeo/Gif/Primeira Igreja Batista no Retiro_2.gif">
+<img width="650" heigth="700" src ="Vídeos/Gif/Primeira Igreja Batista no Retiro_2.gif">
 </p>
 </br>
 </br>

@@ -8,7 +8,7 @@ Primeiro site remunerado que fiz para uma comunidade cristã com objetivo de rep
 </br>
 
 ## GIF's
-Aqui estão alguns gifs do site desse projeto, para ver o video completo vá na pasta Vídeos! =)
+Aqui estão alguns gifs do site desse projeto, para ver o video completo compactado vá na pasta Vídeos! =)
 </br>
 <p align = center>
 <img width="650" heigth="700" src ="Vídeos/Gif/Primeira Igreja Batista no Retiro_1.gif">

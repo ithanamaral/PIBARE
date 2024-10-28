@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,11 +23,15 @@
         </div>
 
         
-            <label for="checkbox" class="label_menu"><p class="p_label">Localização</p><span class="tiras"></span></label>
-            <input type="checkbox" id="checkbox" class="checkbox"/>
+        <button id="btn" aria-label="Abrir Menu"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false">Localização<span class="tiras"></span></button>
+         
+     
        
 
-        <div class="menu">
+        <nav class="menu" id="menu">
             
             <ul class="lista">
                 <li>
@@ -57,7 +62,7 @@
                     <a href="contribua.html" class="selectable_button">Contribua</a>
                 </li>
             </ul>
-        </div>
+        </nav>
 
     </header>
 
@@ -67,8 +72,8 @@
         <div class="titulo">
 
             <div class="local">
-                <div class="title">
-                    <h2>Onde nos Encontrar</h2>
+                <div class="title js">
+                    <h2>ENCONTRE-NOS</h2>
                 </div>
             </div>
 
@@ -82,14 +87,14 @@
 
 
 
-            <h1 class="h1_endereço"><a href="https://maps.app.goo.gl/HH14sF2domGVBJp89"
-                    target="_blank">https://maps.app.goo.gl/HH14sF2domGVBJp89</a> </h1>
+            <h2 class="h1_endereço_2"><a href="https://maps.app.goo.gl/HH14sF2domGVBJp89"
+                    target="_blank">https://maps.app.goo.gl/HH14sF2domGVBJp89</a> </h2>
 
         </div>
         <div class="mapa">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.076113883459!2d-44.15630938946273!3d-19.836732135333463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6ec0d25ecc3c5%3A0x3201ca6d325ccb71!2sR.%20Retiro%20Campestre%2C%20419%20-%20Retiro%2C%20Contagem%20-%20MG%2C%2032050-400!5e0!3m2!1spt-BR!2sbr!4v1718228957059!5m2!1spt-BR!2sbr"
-                width="1200vw" height="1100vh" style="border:0;" allowfullscreen="" loading="lazy"
+                width="800vw" height="700vh" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
@@ -101,13 +106,14 @@
 
     </div>
     <footer class="footer">
-        <p class="page1">" Eu sou a videira verdadeira, e meu Pai é o agricultor. Todo ramo que, estando em mim,
-            não der fruto, ele o corta; e todo o que dá fruto limpa, para que produza mais fruto ainda. "
+        <p class="page1">"Eu sou a videira verdadeira, e meu Pai é o agricultor. Todo ramo que, estando em mim,
+            não der fruto, ele o corta; e todo o que dá fruto limpa, para que produza mais fruto ainda."
 
             </br>João 15:1-2 ARA</p>
 
 
     </footer>
+    <script src="/script.js"></script>
 </body>
 
 </html>

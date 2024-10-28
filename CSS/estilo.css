@@ -13,23 +13,37 @@ html {
     overflow-x: hidden;
 }
 
+.js{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.67s;
+ }
+ 
+ .show{
+     opacity: 1;
+     filter: blur(0px);
+     transform: translateX(0);
+     transition: all 1.67s;
+ }
+
 .header{
     display: flex;
     justify-content: center;
     text-align: center;
     
 }
+
 .logo{
 
-   height: 370px;
-   width: 400px; 
+   height: 200px;
+   width: 250px; 
 }
 
 header {
     width: 100%;
     height: 30%;
     background-color: white;
-    box-sizing: border-box;
     max-width: 100vw;
 }
 
@@ -44,7 +58,9 @@ header {
  display: none;
 }
 
-
+button{
+    visibility: hidden;
+}
 
 
 
@@ -54,6 +70,8 @@ header {
     margin-bottom: 10px;
     
 }
+
+
 
 .lista{
     list-style-type: none;
@@ -72,6 +90,7 @@ header {
 .lista a{
     text-decoration: none;
     color: inherit;
+    font-size: 1.3vw;
 }
 
 
@@ -79,6 +98,8 @@ header {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 150%;
     max-width: 100vw;
     background-color: #f8f8ff;
@@ -92,10 +113,13 @@ header {
     justify-content: center;
     text-align: center;
     border-bottom: 6px solid darkblue;
-    width: 400px;
-    font-size: xx-large;
+    width: 600px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:20px;
+}
+
+.title h2{
+ font-size: 1.7vw;
 }
 
 .chuch_image{
@@ -108,9 +132,15 @@ header {
 
 
 .image {
-    width: 1000px;
-    height: 800px;
+    width: 50vw;
+    height: 65vh;
 }
+
+.image2{
+    width: 50vw;
+    height: 65vh;
+}
+
 
 
 .about_us {
@@ -183,18 +213,21 @@ header {
 
 .page1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size:xx-large;
+    font-size: 1.1vw;
+    width: 50vw;
    
 }
 
 li {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
   
 
 }
 
 .dia_h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2vw;
 }
 
 .dia{
@@ -233,7 +266,8 @@ footer {
     line-height: 1.5;
     color: #f8f8ff;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-top: 55px;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
 }
 
 
@@ -257,12 +291,12 @@ footer {
     justify-content: center;
     text-align: center;
     margin: 20px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 8vh;
+    font-size: 0.8vw;
 }
 
 .biblia{
-    width: 80vh;
+    width: 80vw;
     font-family: "Roboto Slab", serif;
     font-weight: 400;
     padding-bottom: 7px;
@@ -298,7 +332,9 @@ footer {
 }
 
 .page2{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4vw;
+    font-weight: 400;
 }
 
 
@@ -319,12 +355,15 @@ footer {
 }
 
 .page3{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4vw;
+    font-weight: 400;
+    
 }
 
 
-/*----------------------------- Juventude ------------------*/
-#juventude{
+/*----------------------------- Devocionais ------------------*/
+#devocionais{
     border-bottom: 7px solid blue;
 }
 
@@ -344,6 +383,10 @@ footer {
     justify-content: center;
 }
 
+.video_pastoral::-webkit-media-controls{
+    display: flex;
+    height: 200px;
+}
 
 /*----------------------------- Localização ------------------------*/
 
@@ -352,7 +395,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     margin: 30px 0px;
-   line-height: 1.7;
+    margin-left: 2vw;
+    line-height: 1.7;
 }
 
 #Localização{
@@ -367,11 +411,21 @@ footer {
     margin-top: 30px;
 }
 
-
 .h1_endereço{
     display: flex;
     justify-content: center;
     font-weight: 500;
+    width: 35vw;
+    height: 7vh;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.h1_endereço_2{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    height: 7vh;
 }
 
 
@@ -380,9 +434,6 @@ footer {
     justify-content: center;
 }
 
-.h1_endereço{
-    font-weight: 500;
-}
 
 /*----------------------------- Fotos ---------------------------*/
 #fotos{
@@ -398,9 +449,11 @@ footer {
     padding-bottom: 8vh;
 }
 
+
+
 .fotos_church .igreja{
-    width: 800px;
-    height: 700px;
+    width: 470px;
+    height: 430px;
     box-shadow:  10px 5px 5px black;
     transition: 0.45s ease-in-out;
     border-radius: 10%;
@@ -453,8 +506,8 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
-    margin-left: 200px;
-    width: 90%;
+    margin-left: 20px;
+    width: 100%;
     
 }
 
@@ -490,7 +543,7 @@ footer {
     border: 7px solid darkblue;
     background-color: white;
     border-radius: 7%;
-    height: 70vh;
+    height: 75vh;
     width: 35vw;
    
 }
@@ -568,7 +621,7 @@ h4{
     content: " ";
     width: 0;
     height: 7px; /* Ajuste a altura conforme necessário */
-    border-bottom: 7px inset darkgreen;
+    /*border-bottom: 7px inset darkgreen;*/
     position: absolute;
     bottom: 0;
     left: 0;
@@ -595,17 +648,31 @@ h4{
 /* ------------------------------------------ Media Query --------------------------------------------------------*/
 
 
-@media only screen and (max-width: 2110px){ /*Somente para fazer o menu responsivo*/
+@media only screen and (max-width: 910px){ /*Somente para fazer o menu responsivo*/
    
+    button{
+        visibility: visible;
+    }
+    
+    .title h2{
+        font: 66vw;
+    }
+
     .menu{
-       display: none;
+      visibility: hidden;
+      display: block;
        z-index: 1;
+      
+       transition: 0.2s;
+       height: 0;
     }
     
     .p_label{
         padding-right: 2vw;
+        font-size: 4.5vw;
     }
     .menu .lista{
+      
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -618,14 +685,11 @@ h4{
         
     }
   
-    .checkbox{
-        display: none;
-    }
+    
 
-     .checkbox:checked ~ .menu{ /*Para abrir o menu*/
-        display:initial;
-        overflow-y: auto;
-        
+     .menu.active{ /*Para abrir o menu*/
+    visibility: visible;
+        height: calc(20vh - 4.7rem);
      }
   
 
@@ -638,6 +702,9 @@ h4{
         height: 7vh;
     }
 
+    .lista a{
+        font-size: 2.6vw;
+    }
 
     header{
         display: flex;
@@ -647,25 +714,22 @@ h4{
     }
 
     .header{
-        margin-left: 15%;
+        margin-left: 0%;
     }
 
 
-     .label_menu{
+     button{
         display: flex;
         width: 100%;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 10%;
+        margin-right: 5%;
         cursor: pointer;
-       
-     }
-
-    .label_menu{
-     
         font-size: 50px;
-        
-    }
+        background-color: white;
+        border: none;
+        gap: 20px;
+     }
 
     .tiras{
         display: inline-block;
@@ -687,21 +751,25 @@ h4{
     }
 
    .image{
-    height: 40vh; 
-    width: 80vw;
+    height: 10vh; 
+    width: 20vw;
    }
 
   footer{
-    height: 8vh;
+    height: auto;
   }
 
+  footer .page1{
+    font-size: 2vw;
+  }
 
 .fotos_church{
     width: 100%;
-    margin: 0;
+    margin-left: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 
 .h3{
@@ -710,7 +778,7 @@ h4{
 
   .foto{
     height: auto;
-    width: 40%;
+    width: 93%;
     margin-bottom: 100px;
     overflow: hidden;
 }
@@ -722,7 +790,7 @@ h4{
 
 
 .h5_fotos{
-    font-size: 2.5vw;
+    font-size: 2.6vw;
 }
 
 
@@ -732,8 +800,9 @@ h4{
 
 
 .qr_code{
-    width: 70%;
-    height: 90%;
+    width: 70vw;
+    height: 55vh;
+    border-radius: 8.5%;
 }
 
 .cnpj{
@@ -741,16 +810,22 @@ h4{
 }
 
 .h2_contribua{
-    font-size: 2.7vw;
+    font-size: 4vw;
 }
 
+.h3_contribua{
+    font-size: 3vw;
+}
+
+
 h4{
-    font-size: 2vw;
+    font-size: 3.5vw;
+    font-weight: 400;
 }
 
 .qr_code_image img{
     height: 20vh;
-    width: 27vw;
+    width: 35vw;
     margin-bottom: 2vh;
 }
 
@@ -766,6 +841,83 @@ h4{
 .video{
     margin-bottom: 15vh;
 }
+
+.page1{
+    font-size: 3vw;
+    width: 70vw;
+}
+
+
+.horarios li, .contatos li{
+    font-size: 3vw;
+}
+
+
+.dia_h3{
+    font-size: 2.7vw;
+    
+}
+
+.dia{
+    width: 20vw;
+}
+
+
+.title h2{
+    font-size: 4.5vw;
+}
+
+
+.versiculo{
+    margin-bottom: 7vh;
+}
+
+.foto_antiga{
+    margin-top: 0;
+}
+
+.page3{
+    font-size: 3vw;
+}
+
+
+
+.h1_endereço{
+    font-size: 3vw;
+    width: 200vw;
+    height: 7vh;
+}
+
+.image {
+    width: 80vw;
+    height: 40vh;
+}
+
+.image2{
+    width: 75vw;
+    height: 34vh;
+}
+
+
+.logo{
+    height: 20vh;
+    width: 45vw;
+}
+
+
+.js{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.0s;
+ }
+ 
+ .show{
+     opacity: 1;
+     filter: blur(0px);
+     transform: translateX(0);
+     transition: all 1.0s;
+ }
 
 }
 

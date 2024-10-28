@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,11 +23,15 @@
         </div>
 
         
-            <label for="checkbox" class="label_menu"><p class="p_label">Contribua</p> <span class="tiras"></span></label>
-            <input type="checkbox" id="checkbox" class="checkbox"/>
+        <button id="btn" aria-label="Abrir Menu"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false">Contribua <span class="tiras"></span></button>
+         
+     
         
 
-        <div class="menu">
+        <nav class="menu" id="menu">
 
             <ul class="lista">
                 <li>
@@ -57,7 +62,7 @@
                     <a href="contribua.html" class="selectable_button" id="contribua">Contribua</a>
                 </li>
             </ul>
-        </div>
+        </nav>
 
     </header>
 
@@ -67,19 +72,19 @@
         <div class="titulo">
 
             <div class="local">
-                <div class="title">
+                <div class="title js">
                     <h2>CONTRIBUA COM AMOR</h2>
                 </div>
             </div>
         </div>
-        <div class="versiculo">
+        <div class="versiculo js">
 
             <h1 class="biblia"> " Cada um contribua segundo tiver proposto no coração, não com tristeza ou por
                 necessidade; porque Deus ama a quem dá com alegria." </br>2 Coríntios 9:7
             </h1>
         </div>
          
-        <div class="pix">
+        <div class="pix js">
             <div class="title">
                 <h2>PIX</h2>
             </div>
@@ -101,13 +106,14 @@
     </div>
 
     <footer class="footer">
-        <p class="page1">" Eu sou a videira verdadeira, e meu Pai é o agricultor. Todo ramo que, estando em mim,
-            não der fruto, ele o corta; e todo o que dá fruto limpa, para que produza mais fruto ainda. "
+        <p class="page1">"Eu sou a videira verdadeira, e meu Pai é o agricultor. Todo ramo que, estando em mim,
+            não der fruto, ele o corta; e todo o que dá fruto limpa, para que produza mais fruto ainda."
 
             </br>João 15:1-2 ARA</p>
 
 
     </footer>
+    <script src="/script.js"></script>
 </body>
 
 </html>

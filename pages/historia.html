@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,11 +23,14 @@
         </div>
 
         
-            <label for="checkbox" class="label_menu"><p class="p_label">História</p> <span class="tiras"></span></label>
-            <input type="checkbox" id="checkbox" class="checkbox"/>
-        
+        <button id="btn" aria-label="Abrir Menu"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false">História<span class="tiras"></span></button>
+         
+     
 
-        <div class="menu">
+        <nav class="menu" id="menu">
             
             <ul class="lista">
                 <li>
@@ -57,7 +61,7 @@
                     <a href="contribua.html" class="selectable_button">Contribua</a>
                 </li>
             </ul>
-        </div>
+        </nav>
 
     </header>
 
@@ -67,25 +71,24 @@
         </br>
 
         <div class="titulo">
-                <div class="title">
+                <div class="title js">
                     <h2>NOSSA HISTÓRIA</h2>
                 </div>
         </div>
         </br>
 
-        <div class="versiculo">
-            <h1 class="biblia">" Então tomou Samuel uma pedra, e a pôs entre Mizpá e Sem, e chamou-lhe Ebenézer; e
+        <div class="versiculo js">
+            <h1 class="biblia">"Então tomou Samuel uma pedra, e a pôs entre Mizpá e Sem, e chamou-lhe Ebenézer; e
                 disse: Até aqui nos
                 ajudou o Senhor." </br>1 Sm 7.12</h1>
         </div>
 
         <div class="foto_antiga">
-            <img src="/Img/Captura de tela 2024-06-11 151410.png" alt="Foto de Construção da Igreja" class="image"
-                style="height: 1000px; width: 1400px;">
+            <img src="/Img/Captura de tela 2024-06-11 151410.png" alt="Foto de Construção da Igreja" class="image2">
         </div>
 
         <div class="texto">
-            <div class="history">
+            <div class="history js">
 
                 </br>
                 <p class="page2"> No dia <span class="bold">06 de março de 2004</span> se inicia a história da <span
@@ -110,7 +113,7 @@
                         class="bold">pastor Pércio
                         de Ávila Bragança</span> que esteve à frente da Igreja por vários anos, após sua saída, o <span
                         class="bold">pastor
-                        Silas Sérgio de Abreu</span> assumiu a liderança pastoral da Igreja e foi sucedido pelo o pastor
+                        Silas Sérgio de Abreu</span> assumiu a liderança pastoral da Igreja e foi sucedido pelo pastor
                     <span class="bold">Renato Mendes Leal</span> assumiu interinamente a liderança pastoral da Igreja
                     até o
                     mês de <span class="bold">Agosto de 2020</span> e
@@ -137,7 +140,7 @@
                     não mediram esforços para concretizar essa obra!
                     Graças ao <span class="bold">bom Deus</span>, a <span class="bold">Primeira Igreja Batista</span>
                     tem em
-                    seus 17 anos mantido o foco de levar a mensagem de
+                    seus 20 anos mantido o foco de levar a mensagem de
                     Cristo à todas as pessoas, é uma Igreja de fé e comunhão onde o amor de Cristo é a base das relações
                     entre seus membros e com a comunidade!
                 </p>
@@ -148,7 +151,7 @@
                     que
                     seja relevante e importante,
                     sal e luz, uma <span class="bold">agência missionária do Senhor</span>, levando muitas vidas a
-                    Cristo!!
+                    Cristo!
 
                 </p>
             </div>
@@ -159,14 +162,14 @@
 
     </div>
     <footer class="footer">
-        <p class="page1">" Eu sou a videira verdadeira, e meu Pai é o agricultor. Todo ramo que, estando em mim,
-            não der fruto, ele o corta; e todo o que dá fruto limpa, para que produza mais fruto ainda. "
+        <p class="page1">"Eu sou a videira verdadeira, e meu Pai é o agricultor. Todo ramo que, estando em mim,
+            não der fruto, ele o corta; e todo o que dá fruto limpa, para que produza mais fruto ainda."
 
             </br>João 15:1-2 ARA</p>
 
 
     </footer>
-
+    <script src="/script.js"></script>
 </body>
 
 </html>

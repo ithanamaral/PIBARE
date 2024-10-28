@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,12 +22,15 @@
                     class="logo"></a>
         </div>
         
-            <input type="checkbox" id="checkbox" class="checkbox"/>
-            <label for="checkbox" class="label_menu"><p class="p_label">Home</p> <span class="tiras"></span></label>
+            
+           <button id="btn" aria-label="Abrir Menu"
+           aria-haspopup="true"
+           aria-controls="menu"
+           aria-expanded="false">Menu<span class="tiras"></span></button>
             
         
 
-        <div class="menu">
+        <nav class="menu" id="menu">
             <ul class="lista">
                 <li>
                     <a href="/index.html" class="selectable_button" id="home">Home</a>
@@ -41,7 +45,7 @@
                 </li>
 
                 <li>
-                    <a href="pages/devocionais.html" class="selectable_button" id="Devocionais">Devocionais</a>
+                    <a href="pages/devocionais.html" class="selectable_button" >Devocionais</a>
                 </li>
 
                 <li>
@@ -57,7 +61,7 @@
                 </li>
 
             </ul>
-        </div>
+        </nav>
 
     </header>
 
@@ -65,7 +69,7 @@
 
         <div class="chuch_image">
             <img src="Img/Foto1.jpeg" class="image" alt="Primeira Igreja Batista no Retiro"
-                style="height: 1000px; width: 1400px;" />
+                />
         </div>
 
 
@@ -73,14 +77,14 @@
 
         <div class="about_us">
 
-            <div class="title">
+            <div class="title js">
                 <h2>SOBRE NÓS</h2>
             </div>
 
 
             </br>
             </br>
-            <div class="text_about">
+            <div class="text_about js">
                 <p class="page1">A <span class="bold">Primeira Igreja Batista no Retiro</span> em 2024 completa <span
                         class="bold">20
                         anos</span> de fundação. Temos como Igreja de Cristo o propósito de ser uma agência do Reino de
@@ -90,24 +94,24 @@
                     Você
                     é <span class="bold">bem vindo(a)</span> para estar conosco e através do Estudo da Palavra,
                     louvores,
-                    orações e comunhão, crescer e viver as <span class="bold">bençãos de Deus!!!</span></p>
+                    orações e comunhão, crescer e viver as <span class="bold">bençãos de Deus!</span></p>
             </div>
         </div>
 
-        <div class="schedules">
-            <div class="title">
+        <div class="schedules ">
+            <div class="title js">
                 <h2>HORÁRIOS</h2>
             </div>
             </br>
-            <div class="horarios">
-                <div class="dia">
+            <div class="horarios js">
+                <div class="dia js">
                     <h3 class="dia_h3">Quartas-Feiras</h3>
                 </div>
                 <ul>
                     <li> Culto de Oração - <span class="bold">19:30 hrs</span>.</li>
                     </br>
                 </ul>
-                <div class="dia">
+                <div class="dia js">
                     <h3 class="dia_h3">Domingos</h3>
                 </div>
                 <ul>
@@ -120,11 +124,11 @@
         </div>
 
         <div class="contact">
-            <div class="title">
+            <div class="title js">
                 <h2>CONTATOS</h2>
             </div>
             </br>
-            <div class="contatos">
+            <div class="contatos js">
                 <ul>
                     <li>(31) 98359-7825</li>
                     <li><a href="mailto:pastoral.pibare@gmail.com" target="_blank">pastoral.pibare@gmail.com</a></li>
@@ -139,13 +143,14 @@
     </div>
     </div>
     <footer class="footer">
-        <p class="page1">" Eu sou a videira verdadeira, e meu Pai é o agricultor. Todo ramo que, estando em mim,
-            não der fruto, ele o corta; e todo o que dá fruto limpa, para que produza mais fruto ainda. "
+        <p class="page1">"Eu sou a videira verdadeira, e meu Pai é o agricultor. Todo ramo que, estando em mim,
+            não der fruto, ele o corta; e todo o que dá fruto limpa, para que produza mais fruto ainda."
 
             </br>João 15:1-2 ARA</p>
 
 
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

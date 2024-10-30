@@ -50,7 +50,10 @@ elements.forEach( (element) => myObserver.observe(element))
 
 
 
-
+//Para o Carrosel
+$('.carousel').carousel({
+    interval: 3000
+  })
 
 
 

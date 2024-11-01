@@ -118,10 +118,11 @@ button{
     width: 600px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:20px;
+   
 }
 
 .title h2{
- font-size: 1.7vw;
+    font-size: 2.3vw;
 }
 
 .chuch_image{
@@ -270,6 +271,7 @@ footer {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
+   
 }
 
 
@@ -452,16 +454,6 @@ footer {
     padding-bottom: 8vh;
 }
 
-
-.title2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-
 .title3{
     display: flex;
     flex-direction: column;
@@ -469,39 +461,7 @@ footer {
     align-items: center;
     margin: 100px;
     height: 30px;
-}
-
-
-.h3{
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight:500;
-    font-size:2vw;
-    font-style: italic;
-    
-}
-
-.h5_fotos{
-    font-family:"Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-size:1vw
-    
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-body,
-html {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: auto;
-    overflow-x: hidden;
+    margin-top: 200px !important;
 }
 
 .js{
@@ -599,19 +559,7 @@ button{
 
 
 
-.title {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border-bottom: 6px solid darkblue;
-    width: 600px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin:20px;
-}
 
-.title h2{
- font-size: 1.7vw;
-}
 
 .chuch_image{
     display: flex;
@@ -783,13 +731,14 @@ footer {
     text-align: center;
     margin: 20px;
     margin-bottom: 8vh;
-    font-size: 0.8vw;
+   
 }
 
 .biblia{
     width: 80vw;
     font-family: "Roboto Slab", serif;
     font-weight: 400;
+    font-size: 1.7vw;
     padding-bottom: 7px;
 }
 
@@ -938,7 +887,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    font-size: 5vw !important;
 }
 
 
@@ -956,7 +905,7 @@ footer {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight:500;
-    font-size:2vw;
+    font-size: 2.6vw;
     font-style: italic;
     
 }
@@ -965,7 +914,7 @@ footer {
     font-family:"Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
-    font-size:1vw
+    font-size:1.4vw
     
 }
 
@@ -1127,7 +1076,29 @@ h4{
     font-size: 1vw;
 }
 
+/*----------------------------------FALE CONOSCO ----------------------------------------------------------*/
 
+#fale_conosco{
+    border-bottom: 7px solid blue;
+}
+
+.paragrafo_faleconosco{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 3.5vw;
+}
+.paragrafo_faleconosco p{
+    font-size: 1.60vw;
+}
+
+.paragrafo_faleconosco a{
+    margin-top: 6vh;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+}
 
 /*----------------------------------- HOOVERS ------------------------------------------------------------*/
 .selectable_button {
@@ -1176,14 +1147,8 @@ h4{
 
 @media only screen and (max-width: 910px){ /*Somente para fazer o menu responsivo*/
    
-   
-
     button{
         visibility: visible;
-    }
-    
-    .title h2{
-        font: 66vw;
     }
 
     .menu{
@@ -1301,7 +1266,7 @@ h4{
 }
 
 .h3{
- font-size: 5vw;
+ font-size: 4vw !important;
 }
 
   .foto{
@@ -1312,7 +1277,7 @@ h4{
 }
 
 .biblia{
-    font-size: 2.7vw;
+    font-size: 3.7vw !important;
 }
 
 
@@ -1391,11 +1356,6 @@ h4{
 }
 
 
-.title h2{
-    font-size: 4.5vw;
-}
-
-
 .versiculo{
     margin-bottom: 7vh;
 }
@@ -1461,5 +1421,16 @@ h4{
     object-fit: cover; /* Ajusta a imagem para cobrir o container sem distorcer */
 }
 
+.title h2{
+    font-size: 4vw;
+}
 
+.paragrafo_faleconosco p{
+    font-size: 2.7vw !important;
+}
+
+
+.paragrafo_faleconosco a{
+    font-size: 4vw;
+}
 }

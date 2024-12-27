@@ -1420,6 +1420,14 @@ h4{
     width: auto;  /* A imagem se ajusta à largura do container */
     object-fit: cover; /* Ajusta a imagem para cobrir o container sem distorcer */
 }
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 6px solid darkblue;
+    width: 170px;
+    
+}
 
 .title h2{
     font-size: 4vw;

@@ -1195,13 +1195,14 @@ h4{
     .cookie-bar {
         flex-direction: column;
         text-align: center;
-        height: 20vh;
+        height: 15vh;
       }
     
       .cookie-bar p{
        height: 2vh;
        margin-bottom: 10px;
        width: 95vw;
+       font-size: 20px;
       }
 
       .endereço h2{
@@ -1210,7 +1211,7 @@ h4{
 
       .cookie-bar button {
         justify-content: center;
-        font-size: 2px;
+        font-size: 20px;
         margin: 10px 0 0;
         width: 35%;
         height: 6.5vh !important;

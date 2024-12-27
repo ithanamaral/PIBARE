@@ -1522,7 +1522,7 @@ h4{
 /* Estilos específicos para o tema escuro */
 @media (prefers-color-scheme: dark) {
     header {
-        background-color: white;
+        background-color: white !important;
     }
     
     #home{
@@ -1530,12 +1530,12 @@ h4{
     }
     
     .label_menu, .checkbox{
-     border: 0px solid white ;
+     border: 0px solid white !important;
     }
     
    
     .container {
-        background-color: #f8f8ff;
+        background-color: #f8f8ff !important;
     }
     
 }

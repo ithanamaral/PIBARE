@@ -620,17 +620,6 @@ button{
 }
 
 
-.schedules {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10vh;
-    margin-left: 2vh;
-    padding-left: 20px;
-    width: 100%;
-    font-size: xx-large;
-}
 
 .horarios {
     display: flex;
@@ -643,17 +632,7 @@ button{
    
 }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10vh;
-    margin-left: 2vh;
-    padding-left: 20px;
-    width: 100%;
-    font-size: xx-large;
-}
+
 
 .contatos {
     display: flex;

@@ -185,11 +185,8 @@ button{
 .about_us {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 10vh;
-    margin-left: 2vh;
-    padding-left: 20px;
     width: 100%;
     font-size: xx-large;
 }
@@ -201,7 +198,7 @@ button{
     justify-content: center;
     align-items: center;
     line-height: 1.5;
-    max-width: 1200px;
+    width: auto;
     font-size: xx-large;
 }
 
@@ -616,19 +613,6 @@ button{
     height: 65vh;
 }
 
-
-
-.about_us {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10vh;
-    margin-left: 2vh;
-    padding-left: 20px;
-    width: 100%;
-    font-size: xx-large;
-}
 
 
 .text_about {

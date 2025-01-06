@@ -50,29 +50,29 @@ elements.forEach( (element) => myObserver.observe(element))
 
 
 //BARRA DE COOKIES
-// Selecionar os elementos
+/* Selecionar os elementos */
 const acceptButton = document.getElementById('accept-cookies');
 const cookieBar = document.getElementById('cookie-bar');
 
-// Função para verificar o consentimento no localStorage
+/* Função para verificar o consentimento no localStorage */
 function checkCookieConsent() {
   const consent = localStorage.getItem('cookieConsent');
   if (consent) {
-    cookieBar.style.display = 'none'; // Esconde a barra se o consentimento já foi dado
+    cookieBar.style.display = 'none'; /* Esconde a barra se o consentimento já foi dado */
   }
 }
 
-// Função para salvar o consentimento no localStorage
+/* Função para salvar o consentimento no localStorage */
 function setCookieConsent(consent) {
   localStorage.setItem('cookieConsent', consent);
-  cookieBar.style.display = 'none'; // Esconde a barra após o consentimento
+  cookieBar.style.display = 'none'; /* Esconde a barra após o consentimento */
   console.log(`Consentimento salvo: ${consent}`);
 }
 
-// Adicionar evento de clique ao botão
+/* Adicionar evento de clique ao botão */
 acceptButton.addEventListener('click', () => setCookieConsent('accepted'));
 
-// Verificar o consentimento ao carregar a página
+/* Verificar o consentimento ao carregar a página */
 checkCookieConsent();
 
 

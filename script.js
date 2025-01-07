@@ -78,7 +78,16 @@ checkCookieConsent();
 
 
 
-
+//PDF
+// Adiciona o evento de clique ao botão
+document.getElementById('download-btn').addEventListener('click', function () {
+    // Link do PDF no diretório local do projeto
+    const pdfUrl = '/pdf/Boletim Nº 14(05.01.25).pdf'; // Caminho relativo ao arquivo PDF
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'Boletim_05/01/25.pdf'; // Nome sugerido para o arquivo
+    link.click();
+});
 
 
 

@@ -131,19 +131,28 @@ button{
     font-size: 1.3vw;
 }
 
-
-
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 150%;
-    min-width: 100vw;
-    background-color: #f8f8ff;
+    min-width: 100%;
     padding-bottom: 8vh;
+   
 }
-
+ 
+/* Diferente por que tem menos elementos na página, sendo assim ele quebra o código */
+.container_boletim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150%;
+    min-width: 100%;
+    padding-bottom: 8vh;
+   
+}
 
 
 .title {
@@ -479,6 +488,7 @@ footer {
     max-width: 100vw;
     background-color: #f8f8ff;
     padding-bottom: 8vh;
+    
 }
 
 .title3{
@@ -573,16 +583,6 @@ button{
 
 
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150%;
-    max-width: 100vw;
-    background-color: #f8f8ff;
-    padding-bottom: 8vh;
-}
 
 
 
@@ -1070,7 +1070,7 @@ h4{
     font-size: 1vw;
 }
 
-/*----------------------------------FALE CONOSCO ----------------------------------------------------------*/
+/*---------------------------------- FALE CONOSCO ----------------------------------------------------------*/
 
 #fale_conosco{
     border-bottom: 7px solid blue;
@@ -1094,6 +1094,29 @@ h4{
     justify-content: center;
 }
 
+/*---------------------------------- Boletim ----------------------------------------------------------*/
+#boletim{
+    border-bottom: 7px solid blue;
+}
+#download-btn{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: darkblue;
+    border: 7px double darkblue;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 0 0 auto;
+    margin-left: 10px;
+    visibility: visible;
+   
+}
+
+.container p{
+    margin-bottom: 15px;
+ 
+}
 /*----------------------------------- HOOVERS ------------------------------------------------------------*/
 .cookie-bar button:hover {
     background-color: darkblue;
@@ -1101,7 +1124,11 @@ h4{
     border: 7px double white;
   }
 
-
+#download-btn:hover{
+    background-color: darkblue;
+    color: #f8f8ff;
+    border: 7px double white;
+}
 
 .selectable_button {
     position: relative; /* O elemento pai precisa ter a posição relativa */
@@ -1149,6 +1176,18 @@ h4{
 
 @media only screen and (max-width: 910px){ /*Somente para fazer o menu responsivo*/
    
+    /* Diferente por que tem menos elementos na página, sendo assim ele quebra o código */
+.container_boletim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55.5vh;
+    min-width: 100%;
+    padding-bottom: 8vh;
+    background-color: #f8f8ff;
+}
+
     .cookie-bar {
         flex-direction: column;
         text-align: center;
@@ -1470,6 +1509,15 @@ h4{
     font-size: 4vw;
 }
 
+#download-btn{
+    width: 50vw;;
+   
+}
+
+.container_boletim p{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
 
 }
 
